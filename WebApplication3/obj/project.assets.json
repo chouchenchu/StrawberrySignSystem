@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Tony\\Strawberry\\WebApplication3\\WebApplication3.csproj",
-      "projectName": "WebApplication3",
-      "projectPath": "E:\\Tony\\Strawberry\\WebApplication3\\WebApplication3.csproj",
+      "projectUniqueName": "E:\\Tony\\Strawberry\\WebApplication3\\StrawberrySignSystem.csproj",
+      "projectName": "StrawberrySignSystem",
+      "projectPath": "E:\\Tony\\Strawberry\\WebApplication3\\StrawberrySignSystem.csproj",
       "packagesPath": "C:\\Users\\Jack Chou\\.nuget\\packages\\",
       "outputPath": "E:\\Tony\\Strawberry\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",
