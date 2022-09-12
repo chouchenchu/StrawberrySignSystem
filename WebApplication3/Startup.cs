@@ -1,3 +1,5 @@
+using CommonLibrary.Global;
+using CommonLibrary.SystemConfig;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,7 @@ namespace WebApplication3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            Entry.SystemConfig = Configuration.GetSection("SystemConfig").Get<SystemConfig>();//獲取基本參數地方
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
