@@ -1,0 +1,17 @@
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebBLL.deps.json
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebBLL.dll
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebBLL.pdb
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\CommonLibrary.dll
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebDAL.dll
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebModel.dll
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebDAL.pdb
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\WebModel.pdb
+E:\Tony\Strawberry\WebBLL\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.csproj.AssemblyReference.cache
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.AssemblyInfoInputs.cache
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.AssemblyInfo.cs
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.csproj.CoreCompileInputs.cache
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.csproj.CopyComplete
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.dll
+E:\Tony\Strawberry\WebBLL\obj\Debug\netcoreapp3.1\WebBLL.pdb

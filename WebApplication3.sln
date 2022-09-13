@@ -5,11 +5,13 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrawberrySignSystem", "WebApplication3\StrawberrySignSystem.csproj", "{90D93459-48F5-46C2-A5E7-B5A9F74084A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{8002CDD9-A5E4-44C9-8677-D63E7A2DB9DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{8002CDD9-A5E4-44C9-8677-D63E7A2DB9DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDAL", "WebDAL\WebDAL.csproj", "{97D48DD1-C068-4B2A-840F-CBCEE8075BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDAL", "WebDAL\WebDAL.csproj", "{97D48DD1-C068-4B2A-840F-CBCEE8075BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebModel", "WebModel\WebModel.csproj", "{A18CE67A-0D78-4C7B-9187-163F7251A7EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebModel", "WebModel\WebModel.csproj", "{A18CE67A-0D78-4C7B-9187-163F7251A7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBLL", "WebBLL\WebBLL.csproj", "{1DF324E0-BBEB-49EF-AE88-C43BEEC2E09E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A18CE67A-0D78-4C7B-9187-163F7251A7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18CE67A-0D78-4C7B-9187-163F7251A7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18CE67A-0D78-4C7B-9187-163F7251A7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF324E0-BBEB-49EF-AE88-C43BEEC2E09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF324E0-BBEB-49EF-AE88-C43BEEC2E09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF324E0-BBEB-49EF-AE88-C43BEEC2E09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF324E0-BBEB-49EF-AE88-C43BEEC2E09E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

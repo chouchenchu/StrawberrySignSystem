@@ -1,0 +1,10 @@
+E:\Tony\Strawberry\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.deps.json
+E:\Tony\Strawberry\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.dll
+E:\Tony\Strawberry\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.AssemblyReference.cache
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfoInputs.cache
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfo.cs
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.CoreCompileInputs.cache
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.dll
+E:\Tony\Strawberry\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.pdb

@@ -1,0 +1,10 @@
+E:\Tony\Strawberry\WebModel\bin\Debug\netcoreapp3.1\WebModel.deps.json
+E:\Tony\Strawberry\WebModel\bin\Debug\netcoreapp3.1\WebModel.dll
+E:\Tony\Strawberry\WebModel\bin\Debug\netcoreapp3.1\WebModel.pdb
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.csproj.AssemblyReference.cache
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.AssemblyInfoInputs.cache
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.AssemblyInfo.cs
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.csproj.CoreCompileInputs.cache
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.dll
+E:\Tony\Strawberry\WebModel\obj\Debug\netcoreapp3.1\WebModel.pdb

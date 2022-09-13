@@ -1,5 +1,6 @@
 using CommonLibrary.Global;
 using CommonLibrary.SystemConfig;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,15 @@ namespace WebApplication3
         {
             services.AddRazorPages();
             Entry.SystemConfig = Configuration.GetSection("SystemConfig").Get<SystemConfig>();//獲取基本參數地方
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(options =>
+            {
+                options.LoginPath = "/Login/Index";//登出網頁(可以省略)
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(60);//登入有效時間
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +62,9 @@ namespace WebApplication3
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                //endpoints.MapRazorPages();
+                endpoints.MapControllerRoute("default", "{controller=Login}/{action=Index}/{id?}");
+
             });
         }
     }
