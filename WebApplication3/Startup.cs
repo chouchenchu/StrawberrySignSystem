@@ -4,11 +4,15 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using StrawberrySignSystem.Hubs;
 using System;
 using System.Collections.Generic;
+using System.IO.Compression;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,14 +33,44 @@ namespace WebApplication3
             services.AddRazorPages();
             Entry.SystemConfig = Configuration.GetSection("SystemConfig").Get<SystemConfig>();//獲取基本參數地方
 
+            //services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            //{
+            //    //返回數據字首不小寫 CamelCasePropertyNamesContractResolver是小寫
+            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            //});
+
+            services.AddMemoryCache();
+            services.AddSession();
+
+            services.AddMvc(options =>
+            {
+                // 將瀏覽器緩存策略應用於所有ASP.NET Core MVC頁面
+                options.Filters.Add(new ResponseCacheAttribute() { NoStore = true, Location = ResponseCacheLocation.None });
+            });
+
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             }).AddCookie(options =>
             {
-                options.LoginPath = "/Login/Index";//登出網頁(可以省略)
+                options.LoginPath = "/LoginView/Index";//登出網頁(可以省略)
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(60);//登入有效時間
             });
+
+            services.AddHttpContextAccessor();
+
+            services.Configure<GzipCompressionProviderOptions>(options =>
+            {
+                options.Level = CompressionLevel.Optimal;
+            });
+
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                options.Providers.Add<GzipCompressionProvider>();
+            });
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,8 +97,9 @@ namespace WebApplication3
             app.UseEndpoints(endpoints =>
             {
                 //endpoints.MapRazorPages();
-                endpoints.MapControllerRoute("default", "{controller=Login}/{action=Index}/{id?}");
-
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=View/LoginView}/{action=Index}/{id?}");
             });
         }
     }
