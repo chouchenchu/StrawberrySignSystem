@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xRccUdIJLwVK3I+MAMoYHMGp/saTp+d+aJGe2h2FgnbaDjsKobJqqP2UuPvoxef64nwbduzdHMQx8/D5blwmyg==",
+  "dgSpecHash": "4xkcSFdAKCvru2D3Se8h1wqoyc3nj/+McHLWgNWq4Vbg5PdyUv2oEzyjm4OuGcDDa7/jKPLzeon2gXqtTSm53Q==",
   "success": true,
   "projectFilePath": "E:\\Tony\\Strawberry\\WebBLL\\WebBLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jack Chou\\.nuget\\packages\\commonservicelocator\\2.0.6\\commonservicelocator.2.0.6.nupkg.sha512",
     "C:\\Users\\Jack Chou\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Jack Chou\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Jack Chou\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

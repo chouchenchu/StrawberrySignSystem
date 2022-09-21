@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CommonServiceLocator;
+using GalaSoft.MvvmLight.Ioc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebBLL;
 using WebBLL.Interface;
+using WebDAL.Login;
 using WebModel.Common;
+using WebModel.Interface;
 using WebModel.Login;
 
 namespace StrawberrySignSystem.Controllers
@@ -17,9 +22,16 @@ namespace StrawberrySignSystem.Controllers
         #endregion
 
         #region Construct
+        public void Resgiter()
+        {
+            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            SimpleIoc.Default.Register<ILoginBLL, LoginBLL>();
+            SimpleIoc.Default.Register<ILoginData, LoginData>();
+        }
         public LoginController(/*ILoginBLL loginBLL, */IHttpContextAccessor accessor):base(accessor)
         {
-            //_loginBLL=loginBLL; 
+            Resgiter();
+            _loginBLL = ServiceLocator.Current.GetInstance<ILoginBLL>();
         }
         #endregion
 

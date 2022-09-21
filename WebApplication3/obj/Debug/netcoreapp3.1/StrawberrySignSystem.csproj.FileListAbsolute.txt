@@ -49,3 +49,8 @@ E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.dll
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.pdb
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.genruntimeconfig.cache
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\CommonServiceLocator.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll

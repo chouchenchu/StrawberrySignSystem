@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WebDAL\WebDAL.csproj" />
     <ProjectReference Include="..\WebModel\WebModel.csproj" />
   </ItemGroup>

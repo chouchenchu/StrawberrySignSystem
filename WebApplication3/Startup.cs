@@ -100,6 +100,7 @@ namespace WebApplication3
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=View/LoginView}/{action=Index}/{id?}");
+                endpoints.MapHub<CustomerWatcherHub>("/CustomerWatcherHub");
             });
         }
     }
