@@ -1,5 +1,9 @@
 ﻿<!DOCTYPE html>
-
+@model WebModel.Login.AccountModel
+@{
+    ViewBag.Title = "LoginView";
+    var Version = ViewBag.Version;
+}
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -11,16 +15,20 @@
             <input id="StoreCode" class="form-control form-control h-45px mb-3"
                    type="text"
                    placeholder="門市代碼" autocomplete="new-password" />
-            <input id="AuthorityID" class="form-control form-control h-45px mb-3"
+            <input id="Account" class="form-control form-control h-45px mb-3"
                    type="text"
                    placeholder="門市帳號" autocomplete="new-password" />
-            <input id="AuthorityPassword" class="form-control form-control h-45px mb-3"
+            <input id="Password" class="form-control form-control h-45px mb-3"
                    type="password"
                    placeholder="門市密碼" autocomplete="new-password" />
             <div class="form-check float-end mb-3">
                 <input class="form-check-input" type="checkbox" value="" id="pwRemember" />
                 <label class="form-check-label ft-grey1" for="pwRemember">記住我的代號及帳號</label>
             </div>
+            @*<div class="login-btn mx-sm-5 mb-sm-4 m-3 mb-2">
+                <button type="button" id="loginForm" class="btn btn-primary btn-lg main-color w-100">登入</button>
+            </div>*@
+            <input onclick="location.href='@Url.Action("Login","Login", new { /*routeValue*/})'" type="button" value="要在按鈕上顯示的字" />
         </div>
     </div>
 </body>

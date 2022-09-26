@@ -99,7 +99,7 @@ namespace WebApplication3
                 //endpoints.MapRazorPages();
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=View/LoginView}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
                 endpoints.MapHub<CustomerWatcherHub>("/CustomerWatcherHub");
             });
         }

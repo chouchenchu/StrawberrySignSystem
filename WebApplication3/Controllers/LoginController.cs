@@ -41,7 +41,7 @@ namespace StrawberrySignSystem.Controllers
             AccountModel accountModel = new AccountModel();
             accountModel.Account = "123";
             accountModel.Password = "123";
-            Login(accountModel);
+            //Login(accountModel);
             //ViewBag.Version = GlobalContext.SystemConfig.Version;
             if (_accessor.HttpContext.User.Identity.IsAuthenticated)
             {
@@ -71,7 +71,7 @@ namespace StrawberrySignSystem.Controllers
                 //}
 
             }
-            return View("Login");
+            return View("View/LoginView.cshtml");
         }
         public void Login(AccountModel accountModel)
         {
