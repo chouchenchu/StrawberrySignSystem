@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <!-- /#container -->
+    <!-- jQuery -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/js/Login.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @RenderBody()
+    <!-- DataTables Page specific script -->
+</body>
+</html>

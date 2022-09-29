@@ -54,3 +54,4 @@ E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Ex
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
+E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\Shared\_LayoutLogin.cshtml.g.cs

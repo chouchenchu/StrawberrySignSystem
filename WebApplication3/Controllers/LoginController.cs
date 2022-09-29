@@ -73,7 +73,7 @@ namespace StrawberrySignSystem.Controllers
             }
             return View("View/LoginView.cshtml");
         }
-        public void Login(AccountModel accountModel)
+        public ActionResult Login(AccountModel accountModel)
         {
             //var _ApiResult = new ApiResult();
 
@@ -99,7 +99,7 @@ namespace StrawberrySignSystem.Controllers
 
             //    return Json(_ApiResult);
             //}
-
+            return PartialView("_DialogContent", new PopWindowsModel { Title = "錯誤", Content = "無法登入" });
         }
         public ActionResult Login1(AccountModel accountModel)
         {
