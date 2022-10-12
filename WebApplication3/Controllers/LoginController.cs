@@ -2,6 +2,7 @@
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
 using WebBLL;
 using WebBLL.Interface;
 using WebDAL.Login;
@@ -49,31 +50,12 @@ namespace StrawberrySignSystem.Controllers
                 var RoleID = _accessor.HttpContext.User.FindFirst("RoleID").Value;
                 ViewBag.RoleID = RoleID;
                 var StoreCode = _accessor.HttpContext.User.FindFirst("StoreCode").Value;
-                //switch (RoleID)
-                //{
-                //    case "1":
-                //        var StoreAccountList = _IAccountService.GetStoreAccountList(StoreCode, 1);
-                //        ViewBag.Model = StoreAccountList;
-                //        return View("Views/StoreAccountManagement/index.cshtml");
-                //    case "2":
-                //        var StoreAccountList1 = _IAccountService.GetStoreAccountList(StoreCode, 1);
-                //        ViewBag.Model = StoreAccountList1;
-                //        return View("Views/StoreAccountManagement/index.cshtml");
-                //    case "3":
-                //        var AccountsList = _IAccountService.GetFAEAccountList(StoreCode, 3);
-                //        if (AccountsList != null)
-                //            ViewBag.Model = AccountsList;
-                //        return View("Views/WithBitAccount/index.cshtml");
-                //    case "4":
-                //        var _model = _IAreaService.GetBandManagementMoel(StoreCode);
-                //        _model.StoreCode = StoreCode;
-                //        return View("Views/BandManagement/index.cshtml", _model);
-                //}
+
 
             }
-            return View("View/LoginView.cshtml");
+            return View("View/Login.cshtml");
         }
-        public ActionResult Login(AccountModel accountModel)
+        public ActionResult Login(/*AccountModel accountModel*/)
         {
             //var _ApiResult = new ApiResult();
 
@@ -85,7 +67,7 @@ namespace StrawberrySignSystem.Controllers
 
             //    return Json(_ApiResult);
             //}
-
+            WebModel.Login.AccountModel accountModel = new AccountModel();
             //得到登入者資訊
             var loginmodel = _loginBLL.IsMember(accountModel);
 

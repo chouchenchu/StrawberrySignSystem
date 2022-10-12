@@ -8,6 +8,11 @@ E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\StrawberrySignSystem.
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\StrawberrySignSystem.pdb
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\StrawberrySignSystem.Views.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\StrawberrySignSystem.Views.pdb
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\CommonServiceLocator.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
@@ -41,7 +46,7 @@ E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_L
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
-E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\LoginView.cshtml.g.cs
+E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\Shared\_LayoutLogin.cshtml.g.cs
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.RazorTargetAssemblyInfo.cache
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.RazorTargetAssemblyInfo.cs
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.Views.pdb
@@ -49,9 +54,4 @@ E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.dll
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.pdb
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.genruntimeconfig.cache
-E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\CommonServiceLocator.dll
-E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
-E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
-E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
-E:\Tony\Strawberry\WebApplication3\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
-E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\Shared\_LayoutLogin.cshtml.g.cs
+E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\Login.cshtml.g.cs

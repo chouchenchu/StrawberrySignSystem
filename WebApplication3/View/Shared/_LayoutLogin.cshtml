@@ -1,17 +1,36 @@
-﻿<!DOCTYPE html>
-
-<html>
+﻿
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <!-- BS icon CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.css" />
+    <!-- google noto TC font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <!-- DataTables -->
+    <link rel="stylesheet"
+          href="/lib/datatables.net-bs5/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet"
+          href="/lib/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" />
+    <link rel="stylesheet"
+          href="/lib/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" />
+    <link rel="stylesheet"
+          href="/lib/datatables.net-select-bs5/css/select.bootstrap5.min.css" />
+    <!-- sidebar CSS -->
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
-<body>
+<body class="">
     <!-- /#container -->
     <!-- jQuery -->
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <!-- bootstrap 5 -->
-    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="~/js/Login.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Login.js" asp-append-version="true"></script>
+    @RenderSection("Scripts",required:false)
     @await RenderSectionAsync("Scripts", required: false)
     @RenderBody()
     <!-- DataTables Page specific script -->

@@ -1,33 +1,36 @@
 ﻿$(document).ready(function () {
+
     if (localStorage.getItem('StoreCode') != null) {
         document.getElementById('StoreCode').value = localStorage.getItem('StoreCode');
-        document.getElementById('AuthorityID').value = localStorage.getItem('AuthorityID');
+        document.getElementById('Account').value = localStorage.getItem('Account');
         //document.getElementById('AuthorityPassword').value = localStorage.getItem('AuthorityPassword');
         $('#pwRemember').prop('checked', true);
     }
+
+
     $(document).on("click", "#loginForm", function () {
 
 
         var postData = {
             StoreCode: $.trim($("#StoreCode").val()),
-            AuthorityID: $.trim($("#AuthorityID").val()),
+            AuthorityID: $.trim($("#Account").val()),
             AuthorityPassword: $.trim($("#AuthorityPassword").val()),
             //captchaCode: $.trim($("#captchaCode").val()),
         };
         $.ajax({
-            url: '/LoginView/Login',
+            url: '/Login/Login',
             type: "post",
             data: postData,
             success: function (obj) {
                 if (obj.Successed) {
                     if ($('#pwRemember').prop('checked')) {
                         localStorage.setItem('StoreCode', postData.StoreCode);
-                        localStorage.setItem('AuthorityID', postData.AuthorityID);
+                        localStorage.setItem('Account', postData.AuthorityID);
                         //localStorage.setItem('AuthorityPassword', postData.AuthorityPassword);
                         redirectToIndex(obj);
                     } else {
                         localStorage.removeItem('StoreCode');
-                        localStorage.removeItem('AuthorityID');
+                        localStorage.removeItem('Account');
                         //localStorage.removeItem('AuthorityPassword');
                         redirectToIndex(obj);
                     }
