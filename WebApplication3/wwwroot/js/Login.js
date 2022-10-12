@@ -8,8 +8,7 @@
     }
 
 
-    $(document).on("click", "#loginForm", function () {
-
+    $(document).on("click", "#LoginClick", function () {
 
         var postData = {
             StoreCode: $.trim($("#StoreCode").val()),
@@ -43,4 +42,4 @@
             }
         });
     });
-}
+})

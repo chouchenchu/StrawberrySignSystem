@@ -55,7 +55,7 @@ namespace StrawberrySignSystem.Controllers
             }
             return View("View/Login.cshtml");
         }
-        public ActionResult Login(/*AccountModel accountModel*/)
+        public ActionResult Login(AccountModel accountModel)
         {
             //var _ApiResult = new ApiResult();
 
@@ -67,7 +67,7 @@ namespace StrawberrySignSystem.Controllers
 
             //    return Json(_ApiResult);
             //}
-            WebModel.Login.AccountModel accountModel = new AccountModel();
+            //WebModel.Login.AccountModel accountModel = new AccountModel();
             //得到登入者資訊
             var loginmodel = _loginBLL.IsMember(accountModel);
 
