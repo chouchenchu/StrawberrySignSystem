@@ -3,7 +3,7 @@
     if (localStorage.getItem('StoreCode') != null) {
         document.getElementById('StoreCode').value = localStorage.getItem('StoreCode');
         document.getElementById('Account').value = localStorage.getItem('Account');
-        //document.getElementById('AuthorityPassword').value = localStorage.getItem('AuthorityPassword');
+        //document.getElementById('Password').value = localStorage.getItem('Password');
         $('#pwRemember').prop('checked', true);
     }
 
@@ -12,8 +12,8 @@
 
         var postData = {
             StoreCode: $.trim($("#StoreCode").val()),
-            AuthorityID: $.trim($("#Account").val()),
-            AuthorityPassword: $.trim($("#AuthorityPassword").val()),
+            Account: $.trim($("#Account").val()),
+            Password: $.trim($("#Password").val()),
             //captchaCode: $.trim($("#captchaCode").val()),
         };
         $.ajax({
@@ -24,13 +24,13 @@
                 if (obj.Successed) {
                     if ($('#pwRemember').prop('checked')) {
                         localStorage.setItem('StoreCode', postData.StoreCode);
-                        localStorage.setItem('Account', postData.AuthorityID);
-                        //localStorage.setItem('AuthorityPassword', postData.AuthorityPassword);
+                        localStorage.setItem('Account', postData.Account);
+                        localStorage.setItem('Password', postData.Password);
                         redirectToIndex(obj);
                     } else {
                         localStorage.removeItem('StoreCode');
                         localStorage.removeItem('Account');
-                        //localStorage.removeItem('AuthorityPassword');
+                        //localStorage.removeItem('Password');
                         redirectToIndex(obj);
                     }
 
