@@ -71,7 +71,8 @@ namespace StrawberrySignSystem.Controllers
             //WebModel.Login.AccountModel accountModel = new AccountModel();
             //得到登入者資訊
             var loginmodel = _loginBLL.IsMember(accountModel);
-
+            if(loginmodel)
+                return View("View/HomePagecshtml.cshtml");
             //if (loginmodel.StoreCode != null)
             //{
 

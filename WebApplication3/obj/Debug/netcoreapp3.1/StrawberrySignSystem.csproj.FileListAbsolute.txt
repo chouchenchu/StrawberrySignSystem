@@ -56,3 +56,4 @@ E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\StrawberrySignSystem.genruntimeconfig.cache
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\Login.cshtml.g.cs
 E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\LoginView.cshtml.g.cs
+E:\Tony\Strawberry\WebApplication3\obj\Debug\netcoreapp3.1\Razor\View\HomePagecshtml.cshtml.g.cs
