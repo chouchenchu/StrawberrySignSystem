@@ -53,36 +53,19 @@ namespace StrawberrySignSystem.Controllers
 
 
             }
-            return View("View/Login.cshtml");
+            return View("View/Login.cshtml", accountModel);
         }
-        [HttpPost]
         public ActionResult Login(AccountModel accountModel)
         {
-            //var _ApiResult = new ApiResult();
-
-            //var dd = new SessionHelper().GetSession("CaptchaCode").ToString();
-            //if (_LoginModel.captchaCode != dd)
-            //{
-            //    _ApiResult.Successed = false;
-            //    _ApiResult.ErrorMessage = "驗證碼錯誤,請重新輸入";
-
-            //    return Json(_ApiResult);
-            //}
-            //WebModel.Login.AccountModel accountModel = new AccountModel();
             //得到登入者資訊
             var loginmodel = _loginBLL.IsMember(accountModel);
-            if(loginmodel)
+            if (loginmodel)
+            {
+                //return RedirectToAction("HomePagecshtml", "View", null);
                 return View("View/HomePagecshtml.cshtml");
-            //if (loginmodel.StoreCode != null)
-            //{
+            }
 
-            //    SignInAsync(loginmodel);
 
-            //    _ApiResult.Successed = true;
-            //    _ApiResult.RoleID = loginmodel.RoleID;
-
-            //    return Json(_ApiResult);
-            //}
             return PartialView("_DialogContent", new PopWindowsModel { Title = "錯誤", Content = "無法登入" });
         }
         #endregion
